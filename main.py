@@ -8,7 +8,7 @@ try:
     number_2 = int(input('Введите второе число: '))
 
 except ValueError:
-    print("Ошибка: введено не числовое значение!")
+    print('Ошибка: введено не числовое значение!')
 
 else:
     operation = input('Введите оператор: ')
@@ -26,7 +26,7 @@ else:
         try:
             result = number_1 / number_2
         except ZeroDivisionError:
-            print("Ошибка: Деление на ноль!")
+            print('Ошибка: Деление на ноль!')
         else:
             print('Результат деления:', result)
     else:
