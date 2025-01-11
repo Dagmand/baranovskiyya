@@ -12,3 +12,4 @@ else:
     print(result)
 finally:
     print("Работа программы завершена")
+    
