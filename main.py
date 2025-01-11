@@ -10,17 +10,17 @@ try:
     operation = input('Введите оператор: ')
 
     if operation == '+':
-        result = number_1 + number_2
         result_operation = 'Результат сложения:'
+        result = number_1 + number_2
     elif operation == '-':
-        result = number_1 - number_2
         result_operation = 'Результат разности:'
+        result = number_1 - number_2
     elif operation == '*':
-        result = number_1 * number_2
         result_operation = 'Результат умножения:'
+        result = number_1 * number_2
     elif operation == '/':
-        result = number_1 / number_2
         result_operation = 'Результат деления:'
+        result = number_1 / number_2
     else:
         print('Введён не верный оператор')
 
