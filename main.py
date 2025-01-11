@@ -5,7 +5,7 @@ result = 0
 try:
     
     number_1 = int(input('Введите первое число: '))
-    number_2 = int(input('Введите первое число: '))
+    number_2 = int(input('Введите второе число: '))
 
 except ValueError:
     print("Ошибка: введено не числовое значение!")
