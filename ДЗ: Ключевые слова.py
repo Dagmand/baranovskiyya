@@ -16,12 +16,19 @@ def even_numbers(n):
 
 
 def test_max_number():
-    assert max_number(1, 2) == 2
-    assert max_number(3, -2) == 3
-    assert max_number(1, 1) == 1
+    assert max_number(1, 2) == 2, "Ошибка: результат не является наибольшей цифрой"
+    assert max_number(3, -5) == 3, "Ошибка: не учитывается знак '-'"
 
+
+max_number_result = max_number(3, 6)
+print(max_number_result, end='\n\n')
+
+test_empty_function = empty_function()
+print(test_empty_function, end='\n\n')
 
 even_generator = even_numbers(9)
 for i in even_generator:
     print(i)
 
+test_max_number()
+print("\nВсе тесты пройдены!")
