@@ -21,14 +21,15 @@ def test_max_number():
 
 
 max_number_result = max_number(3, 6)
-print(max_number_result, end='\n\n')
+print(f'Результат выполнения функции "max_number": {max_number_result}', end='\n\n')
 
 test_empty_function = empty_function()
-print(test_empty_function, end='\n\n')
+print(f'Результат выполнения функции "test_empty_function": {test_empty_function}', end='\n\n')
 
 even_generator = even_numbers(9)
+print('Результат выполнения функции "even_numbers"','\nЧетные цифры от 0 до 9:')
 for i in even_generator:
     print(i)
 
 test_max_number()
-print("\nВсе тесты пройдены!")
+print('\nРезультат выполнения функции "test_max_number":', '\nВсе тесты пройдены!')
