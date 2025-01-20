@@ -1,5 +1,5 @@
 def max_number(a, b):
-    if a >= b:
+    if a > b:
         return a
     else:
         return b
@@ -18,13 +18,11 @@ def even_numbers(n):
 def test_max_number():
     assert max_number(1, 2) == 2, "Ошибка: результат не является наибольшей цифрой"
     assert max_number(3, -5) == 3, "Ошибка: не учитывается знак '-'"
+    assert max_number(2, 2) == 2, "Ошибка: значения a и b равны"
 
 
 max_number_result = max_number(3, 6)
 print(f'Результат выполнения функции "max_number": {max_number_result}', end='\n\n')
-
-test_empty_function = empty_function()
-print(f'Результат выполнения функции "test_empty_function": {test_empty_function}', end='\n\n')
 
 even_generator = even_numbers(9)
 print('Результат выполнения функции "even_numbers"','\nЧетные цифры от 0 до 9:')
