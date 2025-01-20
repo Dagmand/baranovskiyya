@@ -1,5 +1,5 @@
 def max_number(a, b):
-    if a > b:
+    if a >= b:
         return a
     else:
         return b
@@ -11,7 +11,7 @@ def empty_function():
 
 def even_numbers(n):
     for i in range(0, n+1):
-        if i!= 0 and i % 2 == 0:
+        if i % 2 == 0:
             yield i
 
 
