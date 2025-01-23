@@ -5,9 +5,9 @@ try:
 except ValueError:
     print('Ошибка: Введены не корректные данные')
 else:
-    if user_age >= 18 and user_nationality == 'Да' and user_criminal_record == 'Нет':
+    if  18 <= user_age <= 100 and user_nationality.lower().strip() == 'да' and user_criminal_record.lower().strip() == 'Нет':
         print('Вы допущены до голосования')
-    elif user_age < 18 or user_nationality == 'Нет' or user_criminal_record == 'Да':
+    elif user_age < 18 or user_nationality.lower().strip() == 'нет' or user_criminal_record.lower().strip() == 'да':
         print('Вы не допущены до голосования')
     else:
         print('Ошибка: Введены не корректные данные')
