@@ -11,7 +11,7 @@ def string_to_list(input_string: str) -> list:
     return user_text_without_punctuation.split()
 
 
-def len_list(list: list):
+def len_list(list: list) -> int:
     return(len(list))
 
 

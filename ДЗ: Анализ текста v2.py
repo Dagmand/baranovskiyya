@@ -52,7 +52,7 @@ def same_words_count(list: list) -> dict:
 user_text = str(input('Введите Ваш текст: ').lower())
 
 # print(string_to_list(user_text))
-print('Кол-во слов в тексте: ', len_list(string_to_list(user_text)), end='\n\n')
+print('Кол-во слов в тексте: ', type(len_list(string_to_list(user_text))), end='\n\n')
 print('Самое длинное слово в тексте:', longest_word(string_to_list(user_text)), end='\n\n')
 print('Кол-во гласных в тексте: ', vowels_count(user_text), end='\n\n')
 
