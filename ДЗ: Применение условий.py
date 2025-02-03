@@ -2,14 +2,14 @@ def hundred_number_sum():
     hundred_number_sum = 0
     for number in range(1, 101):
         hundred_number_sum += number
-    print('Сумма всех цифр диапазона от 1 до 100 равна ', hundred_number_sum, end='\n\n')
+    print('Сумма всех цифр диапазона от 1 до 100 равна', hundred_number_sum, end='\n\n')
 
 
 def user_input_numbers():
     list_input_number = []
     while True:
         try:
-            input_number = int(input('Введите цифру: '))
+            input_number = float(input('Введите цифру: '))
         except ValueError:
             print("Ошибка: введено не числовое значение!")
         else:
