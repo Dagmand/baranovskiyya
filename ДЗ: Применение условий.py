@@ -6,18 +6,15 @@ def hundred_number_sum():
 
 
 def user_input_numbers():
-    list_input_number = []
-    while True:
+    numbers_count = 0
+    input_number = float(input('Введите число: '))
+    while input_number >= 0:
         try:
             input_number = float(input('Введите число: '))
+            numbers_count += 1
         except ValueError:
             print("Ошибка: введено не числовое значение!")
-        else:
-            if input_number >= 0:
-                list_input_number.append(input_number)
-            else:
-                print ('Кол-во введёных чисел: ', len(list_input_number), end='\n\n')
-                return False
+    print ('Кол-во введёных чисел: ', numbers_count, end='\n\n')
 
 
 hundred_number_sum()
